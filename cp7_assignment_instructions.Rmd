@@ -1,0 +1,65 @@
+---
+title: "cp7_assignment_instructions"
+author: "Aidan O'Hara"
+date: "2023-08-21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Function**als** 
+
+### Exercise 1
+
+
+```{r echo = FALSE}
+matrix(c(7,32,49,0,2, 111:121, 2, 17, 70, 77), nrow = 5, ncol = 4)
+```
+Construct the above matrix and assign it to the variable `anotherMatrix`
+
+Use the apply function to calculate the following.
+
+`anotherMean`: the means of each row of `anotherMatrix`.
+
+`yetAnotherMean`: the means of each column of `anotherMatrix`.
+
+`sortedRows`: where the columns of `anotherMatrix` are sorted in ascending order.
+
+### Exercise 2
+Use `lapply`, `sapply` and `mapply` on the `mtcars` dataframe to get the minimum value of each column. 
+
+`l <- lapply()`
+
+`s <- sapply()`
+
+`m <- mapply()`
+
+Make a list of the three new objects, assigned to `listOfApplys`
+
+Then use `sapply` to return the `class` of each element of the `listOfApplys`, assign it to `typesOfApplies`.
+
+### Exercise 3
+
+# Titanic
+
+Use the apply family to create the following tables (read `matrix`) about the built-in `Titanic` dataset.
+
+The sum of males vs females aboard. Assigned to `passengersBySex`.
+
+The sum of survivors vs sex. Assigned to `survivorsBySex`.
+
+The sum of males vs females aboard. Assigned to `passengersBySexByAge`.
+
+### Exercise 4
+
+Use the apply family and the built-in `iris` dataset to generate plots!  You'll need to run `install.packages("vioplot")` in the console, and include `library(vioplot)` in your submission too.
+
+First, create a boxplot for each numeric column of the `iris` dataset. (four boxplots), assign your apply call to the variable `box`.
+
+`box <- apply()`
+
+Next, construct a violin plot for each numeric column, remove the numbers from the x-axis, and specify `color = "salmon"`, assign your apply call to the variable `violin`.
+
+`violin <- apply()`
